@@ -1,0 +1,35 @@
+Develop a full-stack note-taking application with the following front-end
+design. You can download the necessary assets (images and other static files)
+using the following link:
+
+https://hwdlte.com/RvqdLn
+
+Tasks to be completed:
+1. The user should be able to sign up using either the email and OTP flow
+or through their Google account. Ensure that all inputs required for
+signup are properly validated.
+2. Display relevant error messages in case of incorrect inputs, OTP errors,
+or API failures.
+3. After signup or login, display a welcome page and show user
+information. Also, provide the user with the ability to create and
+delete notes.
+4. The user should also be able to log in using their Google account. (if
+signed up using their google account otherwise login using google
+account not necessary).
+5. Ensure the design is mobile-friendly and closely replicates the
+provided design from the link above.
+6. Use JWT to authorize the user for creating or deleting their notes.
+7. MOST IMPORTANT: Do not do everything at once, start with basic structure first and let me know once it's done so that I can commit it, then move forward with rest of the features one-by-one, I need to commit every feature one by one so do let me know when one feature is done and after confirmation, move to the other features.
+
+Technology Stack:
+Front-end: ReactJS (TypeScript)
+Backend: ExpressJS (TypeScript)
+Database: MongoDB, MySQL, or PostgreSQL
+Version Control: Git
+
+
+Additional Notes:
+1. Use the latest versions of all resources.
+2. Commit your work after completing each feature.
+3. Include a README file with clear instructions on how to build the
+project.
