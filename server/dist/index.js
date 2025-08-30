@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const database_1 = __importDefault(require("./config/database"));
+const auth_1 = __importDefault(require("./routes/auth"));
 // Load environment variables
 dotenv_1.default.config();
 const app = (0, express_1.default)();
@@ -18,7 +19,8 @@ app.use(express_1.default.json());
 app.get('/', (req, res) => {
     res.json({ message: 'Notes App API Server is running!' });
 });
-// API routes will be added here
+// API routes
+app.use('/api/auth', auth_1.default);
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });

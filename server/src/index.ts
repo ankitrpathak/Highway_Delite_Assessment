@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/database';
+import authRoutes from './routes/auth';
 
 // Load environment variables
 dotenv.config();
@@ -18,7 +19,9 @@ app.get('/', (req, res) => {
   res.json({ message: 'Notes App API Server is running!' });
 });
 
-// API routes will be added here
+// API routes
+app.use('/api/auth', authRoutes);
+
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
