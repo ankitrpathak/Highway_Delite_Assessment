@@ -3,6 +3,7 @@ export interface User {
   _id: string;
   email: string;
   name: string;
+  dateOfBirth: Date;
   isVerified: boolean;
   googleId?: string;
   createdAt: Date;
@@ -12,6 +13,7 @@ export interface User {
 export interface UserSignupData {
   name: string;
   email: string;
+  dateOfBirth: Date;
   password: string;
 }
 
